@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHS Pathways</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        .quiz-frame {
+            width: 100%;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .button-group { flex-direction: column; }
+            .btn { width: 100%; text-align: center; }
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 MHS Pathways</h1>
+            <p class="subtitle">Explore Your Academic Journey</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Welcome to the Pathways Program</h2>
+                <p>The MHS Pathways program is designed to help students navigate their academic journey and explore various career pathways. Whether you're interested in STEM, Arts, Business, or other fields, we're here to guide you.</p>
+            </div>
+
+            <div class="section">
+                <h2>Take the Pathways Quiz</h2>
+                <p>Discover which pathway aligns best with your interests and goals! Our interactive quiz will help you find the perfect academic track.</p>
+                <div class="button-group">
+                    <a href="#quiz" class="btn btn-primary">Start Quiz Below</a>
+                </div>
+                <iframe id="quiz" class="quiz-frame" src="mhs-pathways-quiz.html" title="MHS Pathways Quiz"></iframe>
+            </div>
+
+            <div class="section">
+                <h2>Pathways Guide</h2>
+                <p>Download our comprehensive 2026-2027 Pathways Guide to learn more about each pathway, course requirements, and career opportunities.</p>
+                <div class="button-group">
+                    <a href="2026-2027%20Pathways-compressed.pdf" class="btn btn-primary" download>📄 Download Pathways Guide (PDF)</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Need Help?</h2>
+                <p>If you have questions about the pathways program or need guidance choosing your pathway, please reach out to your school counselor or academic advisor.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026-2027 MHS Pathways Program. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
